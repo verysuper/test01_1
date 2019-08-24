@@ -67,8 +67,8 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
-
+//    'timezone' => 'UTC',
+    'timezone'        => 'Asia/Taipei',
     /*
     |--------------------------------------------------------------------------
     | Application Locale Configuration
@@ -80,8 +80,8 @@ return [
     |
     */
 
-    'locale' => 'en',
-
+//    'locale' => 'en',
+    'locale'          => 'zh-TW',
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale
@@ -93,8 +93,8 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
-
+//    'fallback_locale' => 'en',
+    'fallback_locale' => 'zh-TW',
     /*
     |--------------------------------------------------------------------------
     | Faker Locale
