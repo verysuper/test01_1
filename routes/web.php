@@ -20,7 +20,13 @@ Auth::routes(['verify' => true]);
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['prefix'=>'vue'],function(){
+    Route::get('/01', function(){
+        return view('vue_test.vue_01');
+    });
     Route::get('/02', function(){
         return view('vue_test.vue_02');
+    });
+    Route::get('/03', function(){
+        return view('vue_test.vue_03');
     });
 });
