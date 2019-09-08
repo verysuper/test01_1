@@ -165,7 +165,8 @@ return [
         /*
          * Package Service Providers...
          */
-
+        Dingo\Api\Provider\LaravelServiceProvider::class,
+        'Tymon\JWTAuth\Providers\JWTAuthServiceProvider',
         /*
          * Application Service Providers...
          */
@@ -225,8 +226,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
-        'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class
+        'JWTAuth' => 'Tymon\JWTAuth\Facades\JWTAuth',
+        'JWTFactory' => 'Tymon\JWTAuth\Facades\JWTFactory',
     ],
 
 ];
