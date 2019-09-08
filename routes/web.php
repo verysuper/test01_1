@@ -26,7 +26,20 @@ Route::group(['prefix'=>'vue'],function(){
     Route::get('/02', function(){
         return view('vue_test.vue_02');
     });
-    Route::get('/03', function(){
-        return view('vue_test.vue_03');
+    Route::group(['prefix'=>'step4'],function (){
+        Route::get('/03', function(){
+            return view('vue_test.step1.vue_03');
+        });
+        Route::get('/04', function(){
+            return view('vue_test.step1.vue_04');
+        });
+    });
+    Route::group(['prefix'=>'step5'],function (){
+        Route::get('/01', function(){
+            return view('vue_test.step5.vue_01');
+        });
+        Route::get('/02', function(){
+            return view('vue_test.step5.vue_02');
+        });
     });
 });
